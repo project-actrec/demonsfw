@@ -1,317 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="css/templatemo-comparto.css" rel="stylesheet" />
-    <title>Comparto HTML CSS Template</title>
-<!--
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
 
-Comparto TemplateMo
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
 
-https://templatemo.com/tm-544-comparto
-
--->
-</head>
-
-<body>
-    <!-- Back to top button -->
-    <a id="button"><i class="fas fa-angle-up fa-2x"></i></a>
-    <div class="container-fluid">
-        <div class="tm-site-header tm-mb-1">
-            <div class="tm-site-name-container tm-bg-color-1">
-                <h1 class="tm-text-white">Comparto</h1>
-            </div>
-            <div class="tm-nav-container tm-bg-color-8">
-                <nav class="tm-nav" id="tm-nav">
-                    <ul>
-                        <li class="tm-nav-item current">
-                            <a href="#about" class="tm-nav-link">
-                                <span class="tm-mb-1">.01</span>
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li class="tm-nav-item">
-                            <a href="#services" class="tm-nav-link">
-                                <span class="tm-mb-1">.02</span>
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li class="tm-nav-item">
-                            <a href="#gallery" class="tm-nav-link">
-                                <span class="tm-mb-1">.03</span>
-                                <span>Gallery</span>
-                            </a>
-                        </li>
-                        <li class="tm-nav-item">
-                            <a href="#contact" class="tm-nav-link">
-                                <span class="tm-nav-text tm-mb-1">.04</span>
-                                <span class="tm-nav-text">Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
         </div>
-        <section class="tm-mb-1" id="about">
-            <div class="tm-row tm-about-row">
-                <div class="tm-section-1-l">
-                    <img src="https://photojournal.jpl.nasa.gov/jpeg/PIA00036.jpg" alt="About image" class="tm-img-responsive">
-                </div>
-                <article class="tm-section-1-r tm-bg-color-8">
-                    <h2 class="tm-mb-2 tm-title-color">.01 Comparto CSS Layout</h2>
-                    <p><a rel="nofollow" href="https://templatemo.com/tm-544-comparto" target="_parent">Comparto</a> is a custom light-weight CSS layout for your website. You can easily adapt and use this for your commercial or personal websites. Feel free to use it.</p>
-                    <p>You cannot redistribute this template ZIP file in any template collection website. Please <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> if you have any question.</p>
-                    <p>Nunc sed gravida elit. Curabitur rutrum elit id lobortis viverra. Fusce at libero dui.</p>
-                    
-                    <a href="#services" class="tm-btn tm-btn-1 tm-link-to-services">More Detail</a>
-                </article>
-            </div>
-        </section>
-        <div class="tm-bg-color-1 tm-mb-1 tm-row tm-social-row">
-            <div class="tm-icon">
-                <div class="tm-icon-inner">
-                    <a href="#services">
-                        <i class="fas fa-synagogue fa-4x tm-mb-1"></i>
-                        <p>Aenean vel est id massa condimentum</p>
-                    </a>
-                </div>
-            </div>
-            <div class="tm-icon">
-                <div class="tm-icon-inner">
-                    <a href="#gallery">
-                        <i class="fas fa-chart-bar fa-4x tm-mb-1"></i>
-                        <p>Suspendisse interdum lectus purus</p>
-                    </a>
-                </div>
-            </div>
-            <div class="tm-icon">
-                <div class="tm-icon-inner">
-                    <a href="#contact">
-                        <i class="fas fa-images fa-4x tm-mb-1"></i>
-                        <p>Nulla ac sodales est vel iaculis purus</p>
-                    </a>
-                </div>
-            </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
         </div>
-        <section class="tm-mb-1 tm-row tm-services-row" id="services">
-            <div class="tm-section-2-l">
-                <article class="tm-bg-color-6 tm-box-pad tm-mb-1">
-                    <h2 class="tm-mb-2">.02 Aliquam pretium hendrerit</h2>
-                    <p>Cras tempus, velit amet facilisis venenatis, erat felis imperdiet lectus, at posuere elit metus. Title #333 BG #F2F2F2</p>
-                    <p class="tm-mb-0">Nam iaculis, urna ut laoreet aliquam, massa magna dapibus. Text #666</p>
-                </article>
-                <div class="tm-bg-color-7 tm-em-box">
-                    <p class="tm-text-color-2">Nam iaculis, urna ut laoreet aliquam, massa magna dapibus nibh, at pellentesque lectus odio non risus. Nulla ac sodales est, vel iaculis. Text #333 . BG #DDD</p>
-                    <a href="#gallery" class="tm-btn tm-btn-2">Read More</a>
-                </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Social Media template by w3.css</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
             </div>
-            <div class="tm-section-2-r">
-                <img src="https://photojournal.jpl.nasa.gov/jpeg/PIA00370.jpg" alt="Services image" class="tm-img-responsive">
-            </div>
-        </section>
-        <section class="tm-bg-color-4 tm-mb-3 tm-gallery-section" id="gallery">
-            <div class="tm-gallery-header">
-                <h2 class="tm-mb-1 text-right">.03 The Gallery Section</h2>
-                <ul class="tm-gallery-filter tabs clearfix filters-button-group">
-                    <li><a role="button" href="#" class="active" data-filter="*">Show All</a></li>
-                    . <li><a role="button" href="#" data-filter=".nature">Nature</a></li>
-                    . <li><a role="button" href="#" data-filter=".animals">Animals</a></li>
-                    . <li><a role="button" href="#" data-filter=".people">People</a></li>
-                </ul>
-            </div>
-            <div class="tm-gallery-outer">
-                <div class="tm-gallery" id="tm-gallery">
-                    <div class="tm-gallery-item nature">
-                            <img src="http://hardsexphots.com/d3st/b/1712.jpg" alt="Gallery item" />
-                    </div>
-                    <div class="tm-gallery-item animals">
-                            <img src="https://homepages.inf.ed.ac.uk/rbf/HIPR2/images/clc3lab3.gif" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item nature">
-                            <img src="https://www.peoplespharmacy.com/wp-content/uploads/Cran-berry-200x260.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item nature">
-                            <img src="https://www.peoplespharmacy.com/wp-content/uploads/BrainZapEffexor-200x260.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item animals">
-                            <img src="http://nicepornphotos.com/images/galleries/0356/13557/1472659e1627fe0303d818f0dd078469-t.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item animals">
-                            <img src="https://www.peoplespharmacy.com/wp-content/uploads/Honey_drizzler-200x260.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item peopl">
-                            <img src="http://nicepornphotos.com/img/f/5206.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item people">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQF-JghQ6kmRVUFPy1XxYUe0epk3qvjIqGWLA&usqp=CAU" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item people">
-                            <img src="http://nicepornphotos.com/images/galleries/0810/13460/f9d4ac0c895fcaa28dd09bb0b2c95e39-t.jpg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                    <div class="tm-gallery-item people">
-                            <img src="https://mediacdn.99acres.com/media1/9197/8/183948149T-1564566372617.jpeg" alt="Gallery item" class="tm-img-responsive" />
-                    </div>
-                </div>
-            </div>
-        </section> <!-- Gallery -->
-        <section id="contact" class="tm-bg-color-5 tm-mb-3">
-            <h2 class="tm-text-white tm-contact-title">.04 Contact Us</h2>
-            <div class="tm-bg-color-white tm-contact-main">
-                <div class="map-outer">
-                    <div class="gmap-canvas">
-                        <!-- How to change your own map point
-                            1. Go to Google Maps
-                            2. Click on your location point
-                            3. Click "Share" and choose "Embed map" tab
-                            4. Copy only URL and paste it within the src="" field below
-                        -->
-                        <iframe width="100%" height="400" id="gmap-canvas"
-                            src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-                <div class="contact-form-outer">
-                    <form id="contact-form" action="" method="POST" class="tm-bg-color-6 tm-contact-form">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name" required="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required="" />
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="4" name="message" class="form-control" placeholder="Message..."
-                                required=""></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="ml-auto tm-btn tm-btn-3">
-                                Send
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="contact-info-outer">
-                    <div class="tm-bg-color-6 contact-info">
-                        <p>Pellentesque egestas odio sed tellus dictum, vel lobortis ante vehicula.</p>
-                        <p>Morbi eget accumsan libero, non tincidunt felis.</p>
-                        <p class="tm-mb-0">Tel: <a href="tel:0100200990">010-020-0990</a></p>
-                        <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="tm-mb-4 text-center tm-social-s">
-            <a href="https://fb.com/templatemo" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-            <a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-            <a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-            <a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube tm-social-icon"></i></a>
+          </div>
         </div>
-        <footer class="text-center tm-mb-1">
-            <p>Copyright &copy; 2020 Comparto Studio 
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-        </footer>
-    </div> <!-- .container -->
-    <script src="js/jquery.min.js"></script> <!-- https://jquery.com/download/ -->
-    <script src="js/imagesloaded.pkgd.min.js"></script> <!-- https://imagesloaded.desandro.com/ -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- https://isotope.metafizzy.co/ -->
-    <script src="js/jquery.singlePageNav.min.js"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
-    <script>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
 
-        // Scroll to Top button
-        var btn = $('#button');
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Demo caption</p>
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="http://xcdn.pornpics.network/4qtB4FVZeFB9zZlKzxavsA%3D%3D/4.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+         <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
 
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
 
-        // DOM is ready
-        $(function () {
-            // Single Page Nav
-            $('#tm-nav').singlePageNav({ speed: 600 });
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
-            // Smooth Scroll (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
-            $('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                        &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 600, function () {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
-
-            /* Isotope Gallery */
-
-            // init isotope
-            var $gallery = $(".tm-gallery").isotope({
-                itemSelector: ".tm-gallery-item",
-                layoutMode: "fitRows"
-            });
-            // layout Isotope after each image loads
-            $gallery.imagesLoaded().progress(function () {
-                $gallery.isotope("layout");
-            });
-
-            $(".filters-button-group").on("click", "a", function () {
-                var filterValue = $(this).attr("data-filter");
-                $gallery.isotope({ filter: filterValue });
-            });
-
-            $(".tabgroup > div").hide();
-            $(".tabgroup > div:first-of-type").show();
-            $(".tabs a").click(function (e) {
-                e.preventDefault();
-                var $this = $(this),
-                    tabgroup = "#" + $this.parents(".tabs").data("tabgroup"),
-                    others = $this
-                        .closest("li")
-                        .siblings()
-                        .children("a"),
-                    target = $this.attr("href");
-                others.removeClass("active");
-                $this.addClass("active");
-            });
-        });
-    </script>
 </body>
-</html>
+</html> 
